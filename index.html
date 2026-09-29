@@ -1,0 +1,15 @@
+<script>
+const ua = navigator.userAgent || navigator.vendor;
+
+if (/android/i.test(ua)) {
+  window.location.href =
+    "https://play.google.com/store/apps/details?id=com.footprems.app";
+}
+else if (/iPad|iPhone|iPod/.test(ua)) {
+  window.location.href =
+    "https://apps.apple.com/us/app/footprems/id6773466195";
+}
+else {
+  window.location.href = "https://footprems.com";
+}
+</script>
